@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/index.css" rel="stylesheet" type="text/css"/>
+    <title>DAILY MATE</title>
+</head>
+<body>
+    <div class="infodiv">
+        <div class="insideForm">
+            <h1>당신의 일상을 위한<br>
+            DAILY MATE</h1>
+            <form id="loginForm" class="hidden" action="main.html">
+                <input type="text" class="nameInput" maxlength="15" placeholder="이름을 입력해주세요." required/>
+                <input type="submit" class="submitInput" onclick="pageTurn()" value="LOGIN"><span class="text"></span></input>
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+        </div>
+    </div>
+    <div class="imgdiv"></div>
+</body>
+    <script src="./js/bgImg.js"></script>
+    <script src="./js/greeting.js"></script>
+</html>

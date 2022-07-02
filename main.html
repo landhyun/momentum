@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+    <title>DAILY MATE</title>
+</head>
+<body>
+    <main>
+        <div class="leftdiv">
+
+            <div class="welcome">
+                <div class="userImg">
+                    <img src="img/user.png" />
+                </div>
+                <h1 id="greeting" class="hidden"></h1>
+                <input type="button" value="LOGOUT" onclick="reset()" class="logout" />
+            </div>
+
+            <div class="time">
+                <h2 id="today"></h2>
+                <h2 id="clock"></h2>
+            </div>
+
+            <div class="weather">
+                <div class="weatherContent">
+                    <h2>날씨</h2>
+                    <span class="city"></span>
+                    <br />
+                    <span class="temp"></span>
+                </div>
+                <div class="weatherImg">
+                    <img src="./img/weather-news.png" />
+                </div>
+            </div>
+
+            <div class="quote">
+                <div class="parkContent">
+                    <h2>명수옹 어록 <img onclick="quoteChenage()" src="./img/exchange.png"></h2>
+                    <span class="parkQuote">늦었다고 생각할 때가 늦었다</span>
+                </div>
+                <div class="parkImg">
+                    <img src="img/명수1.jpg" />
+                </div>
+            </div>
+        </div>
+
+        <div class="rightdiv">
+            <h2>오늘의 일정</h2>
+            <form id="todoForm">
+                <input type="text" placeholder="TO-DO List를 입력해주세요." required />
+                <input type="submit" value="전송" />
+            </form>
+            <ul id="todoList"></ul>
+        </div>
+    </main>
+
+</body>
+    <script src="./js/clock.js"></script>
+    <script src="./js/greeting.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/bgImg2.js"></script>
+</html>

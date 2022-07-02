@@ -1,0 +1,89 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@font-face {
+  font-family: "Happiness-Sans-Title";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Happiness-Sans-Title";
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.infodiv {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.infodiv .insideForm {
+  width: 70%;
+}
+.infodiv .insideForm form {
+  margin-top: 40px;
+  display: flex;
+}
+.infodiv .insideForm form input {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+.infodiv .insideForm form .nameInput {
+  padding: 10px;
+  cursor: text;
+  width: 400px;
+  font-size: 16px;
+  height: 20px;
+}
+.infodiv .insideForm form .submitInput {
+  margin-left: 20px;
+  align-items: center;
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border: 0;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  padding: 10px;
+  text-decoration: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.infodiv .insideForm form .submitInput :active, .infodiv .insideForm form .submitInput :hover {
+  outline: none;
+}
+.infodiv .insideForm form .submitInput span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 300ms;
+}
+.infodiv .insideForm form .submitInput :hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .submitInput {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+.imgdiv {
+  justify-content: center;
+  width: 70%;
+  height: 97vh;
+}
+
+img {
+  width: 56vw;
+  height: 97vh;
+}/*# sourceMappingURL=index.css.map */

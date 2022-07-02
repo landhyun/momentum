@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'GimpoGothicRegular00';
+}
+
+@font-face {
+    font-family: 'GimpoGothicRegular00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    margin: 5%;
+    padding: 10px;
+    height: 90%;
+    width: 88%;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    display: flex;
+    flex-direction: row;
+}
+
+.leftdiv {
+    height: 100%;
+    width: 35%;
+    margin: 0 15px 15px 0;
+
+    .welcome {
+        padding: 10px;
+        height: 130px;
+        background-color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 15px;
+        border-radius: 8px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .userImg {
+            width: 18%;
+            margin-right: 15px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .logout {
+            margin-left: 5px;
+            background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+            border: 0;
+            box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            line-height: 1em;
+            border-radius: 6px;
+            padding: 10px;
+            transition: 300ms;
+            height: 34px;
+            line-height: 21px;
+            cursor: grab;
+            :active,
+            :hover {
+                outline: none;
+            }
+
+            :hover span {
+                background: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 75px) {
+    .logout {
+        font-size: 12px;
+        min-width: 75px;
+    }
+}
+
+.time {
+    padding: 40px;
+    height: 180px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+
+    #today {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #clock {
+        font-size: 60px;
+        text-align: center;
+    }
+}
+
+.weather {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 15px;
+    border-radius: 8px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+
+    .weatherContent {
+        h2 {
+            font-size: 24px;
+            padding-bottom: 15px;
+        }
+    
+        span {
+            line-height: 30px;
+            color: #2C3639;
+            text-align: center;
+        }
+    }
+
+    .weatherImg {
+        width: 20%;
+        height: min-content;
+        margin-top: 1rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.quote {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    display: flex;
+    height: 130px;
+    justify-content: space-between;
+
+    .parkContent {
+        h2 {
+            font-size: 24px;
+            padding-bottom: 15px;
+
+            img {
+                width: 20px;
+                margin-left: 6px;
+                cursor: pointer;
+            }
+        }
+
+        .parkQuote {
+            padding-top: 8px;
+            text-align: center;
+            line-height: 20px;
+            color: #73777B;
+        }
+    }
+
+    .parkImg {
+        overflow: hidden;
+        border-radius: 50%;
+        width: 22%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.rightdiv {
+    width: 65%;
+    padding: 20px;
+    margin: 0 15px 15px 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    height: 625px;
+
+    form {
+        display: flex;
+        padding-bottom: 2rem;
+        justify-content: space-between;
+    }
+    
+    h2 {
+        padding-bottom: 15px;
+    }
+
+    input:nth-child(1){
+        border: 1px solid #ddd;
+        border-radius: 0.4rem;
+        color: #222;
+        font-size: 15px;
+        font-weight: 500;
+        height: 2.2rem;
+        padding: 0.2rem 0 0 1rem;
+        width: 40rem;
+        margin-right: 1rem;
+    }
+
+    input:nth-child(2){
+        margin-left: 5px;
+        border: 0;
+        background-color: #4700D8;
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        line-height: 1em;
+        border-radius: 6px;
+        padding: 10px;
+        transition: 300ms;
+        height: 36px;
+        line-height: 21px;
+        cursor: grab;
+        :active,
+        :hover {
+            outline: none;
+        }
+
+        :hover span {
+            background: none;
+        }
+    }
+
+        @media (min-width: 75px) {
+        input:nth-child(2) {
+            font-size: 12px;
+            min-width: 75px;
+        }
+    }
+
+    ul {
+        max-height: 67vh;
+        overflow: scroll;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        height: 32px;
+        position: relative;
+        margin-bottom: 8px;
+        transition: all 0.4s ease;
+        box-shadow: 0.2px 0.2px 2px rgb(0 0 0 / 15%);
+        padding: 20px 0 20px 14px;
+        text-align: center;
+        width: 100%;
+
+
+        button {
+        background: none;
+        border: none;
+        font-size: 14px;
+        opacity: 0.6;
+        padding-right: 14px;
+        color: #73777B;
+        cursor: pointer;
+        }
+
+        span {
+            text-align: center;
+            font-size: 17px;
+            padding-right: 14px;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
