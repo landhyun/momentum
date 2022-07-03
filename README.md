@@ -1,7 +1,7 @@
 # momentum ⌚
 
 ## url 바로가기
-https://landhyun.github.io/momentum/main.html
+https://landhyun.github.io/momentum/index.html
 
 ## 미리보기
 1. 로그인 페이지
